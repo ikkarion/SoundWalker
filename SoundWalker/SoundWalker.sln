@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-CSharp-firstpass.csproj", "{2FE20902-5948-3FC0-AB6F-684B9ECBFD6C}"
+EndProject
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-CSharp.csproj", "{159B43E0-17D5-5387-A6E0-7CE46445CAD5}"
+EndProject
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-CSharp-Editor-firstpass.csproj", "{46B63932-21B1-48DB-920E-8D450BE87474}"
+EndProject
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-UnityScript-firstpass.unityproj", "{F4B64117-48DF-A7FA-31A9-1F7D198AF95F}"
+EndProject
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-UnityScript.unityproj", "{EB02C1D7-E5E0-5DA0-23BB-77F694418A43}"
+EndProject
+Project("{5AC08F17-63F5-FCBE-0F23-537BC0E910CA}") = "SoundWalker", "Assembly-UnityScript-Editor-firstpass.unityproj", "{CBB3EF75-2661-39A3-186A-FA4215DB8C54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FE20902-5948-3FC0-AB6F-684B9ECBFD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE20902-5948-3FC0-AB6F-684B9ECBFD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE20902-5948-3FC0-AB6F-684B9ECBFD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE20902-5948-3FC0-AB6F-684B9ECBFD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159B43E0-17D5-5387-A6E0-7CE46445CAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159B43E0-17D5-5387-A6E0-7CE46445CAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159B43E0-17D5-5387-A6E0-7CE46445CAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159B43E0-17D5-5387-A6E0-7CE46445CAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B63932-21B1-48DB-920E-8D450BE87474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B63932-21B1-48DB-920E-8D450BE87474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B63932-21B1-48DB-920E-8D450BE87474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B63932-21B1-48DB-920E-8D450BE87474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B64117-48DF-A7FA-31A9-1F7D198AF95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B64117-48DF-A7FA-31A9-1F7D198AF95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B64117-48DF-A7FA-31A9-1F7D198AF95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B64117-48DF-A7FA-31A9-1F7D198AF95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB02C1D7-E5E0-5DA0-23BB-77F694418A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB02C1D7-E5E0-5DA0-23BB-77F694418A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB02C1D7-E5E0-5DA0-23BB-77F694418A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB02C1D7-E5E0-5DA0-23BB-77F694418A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB3EF75-2661-39A3-186A-FA4215DB8C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB3EF75-2661-39A3-186A-FA4215DB8C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB3EF75-2661-39A3-186A-FA4215DB8C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB3EF75-2661-39A3-186A-FA4215DB8C54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	
+EndGlobal
