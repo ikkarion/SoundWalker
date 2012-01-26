@@ -61,7 +61,7 @@ public class Animator : MonoBehaviour{
 			}
 			frame = frameSize * currentFrame;
 			currentFrame++;
-			print(frame);
+			
 			gameObject.renderer.material.mainTextureOffset = new Vector2(frame,0);
 		}
 	}

@@ -36,10 +36,9 @@ public class LevelControl : LevelDesign {
 	}
 	
 	private void fromStart(){
-		float initTime = (Time.timeSinceLevelLoad*1000)/getMusicTick();
+		
+		double initTime = (Time.timeSinceLevelLoad*1000)/getMusicTick();
 		if(audio.isPlaying){
-			
-			
 			if(initTime >= phase[noteNumber]["time"]){
 					if(phase[noteNumber]["show"] == 1){						
 						drawPlataform(phase[noteNumber]["note"],noteNumber);
@@ -62,14 +61,15 @@ public class LevelControl : LevelDesign {
 			}
 		}
 	}
-	private int getNotePosX(int noteNumber){
-		return (int)(((deltaX*noteNumber) + GameUtil.getStartLocalScale().x) - (maxWidth*2));
+	private float getNotePosX(int noteNumber){
+		return ((noteNumber*deltaX) - GameUtil.getStartPos().x) + maxWidth;
 	}
-	private int getNotePosY(int note){
-		return (int)((deltaY*(note - getFirstNote())) + GameUtil.getStartPos().y);
+	private float getNotePosY(int note){
+		
+		return ((note*deltaY) + (GameUtil.getStartPos().y*2) ) - 10;
 	}
 	private Vector3 getPlataformScale(int noteNumber){		
-		float dimX = ((float)(getMaxDuration()/getMusicTick()) -  ((float)phase[noteNumber]["duration"]/getMusicTick())) * deltaScaleX;
+		float dimX = ((float)(getMaxDuration()/(float)getMusicTick()) -  ((float)phase[noteNumber]["duration"]/(float)getMusicTick())) * deltaScaleX;
 		
 		if(dimX < 1.1f)
 			dimX = minWidth;
@@ -80,14 +80,17 @@ public class LevelControl : LevelDesign {
 		return new Vector3(dimX,0.3f,1);
 	}
 	private void drawPlataform(int note, int noteNumber){		
-		int posx = getNotePosX(noteNumber);
-		int posy =  getNotePosY(note);
+		float posx = getNotePosX(noteNumber);
+		float posy =  getNotePosY(note);
 		
-		GameObject go = (GameObject)Instantiate(plataform,new Vector3(posx,posy,0), plataform.transform.rotation);		
+		GameObject go = (GameObject)Instantiate(plataform,new Vector3(posx,posy,0), plataform.transform.rotation);
+		print((Time.timeSinceLevelLoad*1000)/getMusicTick());
+		print(note);
 		go.name = note.ToString();
 		go.transform.localScale = getPlataformScale(noteNumber);
 		plataforms.Add(go);
-		drawKidNote(new Vector3(posx,posy,0));
+		
+		//drawKidNote(new Vector3(posx,posy,0));
 	}
 	private void drawKidNote(Vector3 position){
 		position.y += 0.5f;

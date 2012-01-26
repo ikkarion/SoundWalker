@@ -8,7 +8,7 @@ public class LevelDesign : MonoBehaviour {
 	private string line = "";
 	private int linecount = 0;
 	private List<Dictionary<string, int>> phaseNotes = new List<Dictionary<string, int>>();
-	private float musicTick = 0;
+	private double musicTick = 0;
 	private int maxDuration = 0;
 	// Use this for initialization
 	void Start () {
@@ -33,7 +33,7 @@ public class LevelDesign : MonoBehaviour {
 			}else if(line.Contains("tick"))
 			{
 				string[] tick = line.Split(new char[]{':'});
-				musicTick = float.Parse(tick[tick.Length - 1]);
+				musicTick = double.Parse(tick[tick.Length - 1]);
 				
 				linecount ++;
 			}
@@ -64,10 +64,12 @@ public class LevelDesign : MonoBehaviour {
 						{
 							notes.Remove(getPair(notes[cont],cont,notes));
 							notes.RemoveAt(cont);
+
 						}
 						else{	
 							notes.Remove(getPair(notes[i],i,notes));
 							notes.RemoveAt(i);
+						
 						}
 				}
 			}
@@ -100,7 +102,7 @@ public class LevelDesign : MonoBehaviour {
 	protected int getMaxDuration(){
 		return maxDuration;
 	}
-	protected float getMusicTick(){
+	protected double getMusicTick(){
 		return musicTick;
 	}
 	protected Dictionary<string,int> getNextNote(Dictionary<int, Dictionary<string,int>>notes, int currentNote){
